@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,40 +13,40 @@
     <h1>Fernando Bade</h1>
     <div class="calculadora">
         <h1>Calculadora</h1>
-        <p id="resultado">Resultado</p>
+        <p id="resultado">0</p>
         <table>
             <tr>
-                <td><button>C</button></td>
-                <td><button>DEL</button></td>
-                <td><button>/</button></td>
-                <td><button>X</button></td>
+                <td><button class="teclas">C</button></td>
+                <td><button class="teclas">DEL</button></td>
+                <td><button class="teclas">/</button></td>
+                <td><button class="teclas">X</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>-</button></td>
+                <td><button class="teclas">7</button></td>
+                <td><button class="teclas">8</button></td>
+                <td><button class="teclas">9</button></td>
+                <td><button class="teclas">-</button></td>
             </tr>
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>+</button></td>
+                <td><button class="teclas">4</button></td>
+                <td><button class="teclas">5</button></td>
+                <td><button class="teclas">6</button></td>
+                <td><button class="teclas"> +</button></td>
             </tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td rowspan="2"><button>=</button></td>
+                <td><button class="teclas">1</button></td>
+                <td><button class="teclas">2</button></td>
+                <td><button class="teclas">3</button></td>
+                <td rowspan="2"><button  class="teclas" id="tecla-igual">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button>0</button></td>
-                <td><button>,</button></td>
+                <td colspan="2"><button class="teclas" id="tecla-zero">0</button></td>
+                <td><button class="teclas">,</button ></td>
             </tr>
 
         </table>
     </div>
 </div>
-
+<script src="./js/script.js"></script>
 </body>
 </html>

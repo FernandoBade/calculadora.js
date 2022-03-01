@@ -13,35 +13,35 @@
     <h1>Fernando Bade</h1>
     <div class="calculadora">
         <h1>Calculadora</h1>
-        <p id="resultado">0</p>
+        <p id="resultado"></p>
         <table>
             <tr>
-                <td><button class="teclas">C</button></td>
-                <td><button class="teclas">DEL</button></td>
-                <td><button class="teclas">/</button></td>
-                <td><button class="teclas">X</button></td>
+                <td><button class="teclas" onclick="clean()">C</button></td>
+                <td><button class="teclas" onclick="deletar()">DEL</button></td>
+                <td><button class="teclas" onclick="input('/')">/</button></td>
+                <td><button class="teclas" onclick="input('*')">X</button></td>
             </tr>
             <tr>
-                <td><button class="teclas">7</button></td>
-                <td><button class="teclas">8</button></td>
-                <td><button class="teclas">9</button></td>
-                <td><button class="teclas">-</button></td>
+                <td><button class="teclas" onclick="input('7')">7</button></td>
+                <td><button class="teclas" onclick="input('8')">8</button></td>
+                <td><button class="teclas" onclick="input('9')">9</button></td>
+                <td><button class="teclas" onclick="input('-')">-</button></td>
             </tr>
             <tr>
-                <td><button class="teclas">4</button></td>
-                <td><button class="teclas">5</button></td>
-                <td><button class="teclas">6</button></td>
-                <td><button class="teclas"> +</button></td>
+                <td><button class="teclas" onclick="input('4')">4</button></td>
+                <td><button class="teclas" onclick="input('5')">5</button></td>
+                <td><button class="teclas" onclick="input('6')">6</button></td>
+                <td><button class="teclas" onclick="input('+')">+</button></td>
             </tr>
             <tr>
-                <td><button class="teclas">1</button></td>
-                <td><button class="teclas">2</button></td>
-                <td><button class="teclas">3</button></td>
-                <td rowspan="2"><button  class="teclas" id="tecla-igual">=</button></td>
+                <td><button class="teclas" onclick="input('1')">1</button></td>
+                <td><button class="teclas" onclick="input('2')">2</button></td>
+                <td><button class="teclas" onclick="input('3')">3</button></td>
+                <td rowspan="2"><button  class="teclas" id="tecla-igual" onclick="calcular()">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button class="teclas" id="tecla-zero">0</button></td>
-                <td><button class="teclas">,</button ></td>
+                <td colspan="2"><button class="teclas" id="tecla-zero" onclick="input('0')">0</button></td>
+                <td><button class="teclas" onclick="input('.')">.</button ></td>
             </tr>
 
         </table>
